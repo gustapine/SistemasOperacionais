@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>sistema operacional</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/mybody.css">
+</head>
+
+<body>
+  <div class="sidenav">
+    <a href="Linux.html">Ubuntu</a>
+    <a href="comandosnoLIN.html">Comandos</a>
+    <a href="index.html">Home</a>
+  </div>
+  
+  <div class="main">
+    
+    <h1>Organização de Pastas</h1>
+    <p>Diferente do Windows a organização é feita por pastas e não por unidade de armazemento.</p>
+
+    <h3>Para pastas</h3>
+
+    <p>Abra o prompt do Linux na barra lateral.</p>
+    <p><ul>
+        <li> cd - Permite você trocar de pasta, descrevendo o caminho completo. Exemplo: 
+            <p>"cd ~/Documentos/filmes" vai para a pasta "filmes"), ou o nome de uma pasta 
+                dentro da atual ("cd filmes" partindo da pasta "Documentos" vai para a pasta "filmes")
+            </p>
+        </li>
+       
+        <li>cd / - Vai para a pasta raiz</li></br>
+        
+        <li>md - cria um diretório</li></br>
+      
+        <li>rmdir -  Remove uma pasta 
+            <p>("RMDIR filmes" removerá permanentemente a pasta filmes)</p>
+        </li>
+        
+        <li>clear - limpa o prompt</li> </br>
+            
+        <li>mv - Move uma pasta para outra já existente, ou renomeia uma pasta.
+            <ul> ("MV filmes midia" moverá a pasta "filmes" para a pasta "mídia", que 
+                já existe. Caso não exista, a pasta "filmes" será renomeada para "mídia")
+            </ul>
+        </li></br>
+        <li>"cd .." - muda para a pasta anterior.</li></br>
+        <li>man - Fornece informações de ajuda sobre comandos
+        </li></br>
+
+        <li>ls - Lista as pastas e arquivos do diretório atual</li></br>
+            
+        <li>ls -l - Lista as pastas e arquivos do diretório atual, em forma de lista, e com mais informações sobre cada pasta e arquivo</li>
+        
+    </li></br>
+
+    <h3>Para Arquivos</h3>
+        <li>touch - Cria um arquivo. Exemplo:
+            <p>("TOUCH documento.txt" criará um arquivo de texto chamado "documento" dentro da pasta atual)</p>
+        </li></br>
+        <li>rm - Deleta um arquivo</li></br>
+        <li>cp - Copia um arquivo para outra página</li></br>
+        <li>mv - move ou renomeia um arquivo</li></br>
+        <img src="imagens/comandoarquivos.jpg">
+    </ul></p>
+
+    <p><h4>Não se esqueça, o Linux é case sensitive, tudo precisa ser escrito corretamente.</h4></p>
+
+    <h1>Comandos Avançados </h1>
+    <ul>
+
+        <p>Relacionados ao C e o C++</p></br>
+        <li>sudo apt update -- atualiza os servidores do sistema</li></br>
+        <li>sudo apt upgrade -- instala atualizações disponíveis de pacotes instalados no sistema</li></br>
+        <p>Os comandos mostrados acima são fundamentais antes de baixar qualque programa.</p>
+        <li>sudo apt install gcc - linguagem C</li></br>
+        <li>sudo apt install g++ - linguagem C++</li></br>
+        <img SRC="IMAGENS/G++.jpg" class="vscode">
+        <li>nano test.cpp -- para programar em C++</li></br>
+        <li>g++ test.cpp -o texte.exe -- compila em C++</li></br>
+        <li>./texte.exe -- executa em C++</li></br>
+        
+        
+        <h3>Apache</h3>
+        <li>sudo apt install apache2 -- baixa o Apache</li></br>
+        <img src="imagens/apache.png" class="vscode">
+        <p>Confirma com o 'y', nega com o 'n'</p>
+        <li>sudo ufw allow "Apache" -- para habilitar o Apache</li></br>
+        <li>sudo systemctl status Apache2 -- para saber se o serviço tá ativo</li></br>
+
+        <h5>Cuidado com este</h5>
+        <p>sudo chmod 777 . -R -- se fizer na raíz dá pau</p>
+        
+    </ul>
+
+</body>
+</html>
