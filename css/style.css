@@ -15,7 +15,7 @@
     width: 100%;
 }
 
-text{
+#text{
   text-decoration: none;
 }
 
@@ -36,8 +36,6 @@ text{
             background-blend-mode:color-dodge;
             background-repeat: no-repeat;
     
-    
-    text-decoration: none;
         }        
         
         
@@ -55,7 +53,7 @@ text{
           background-size: cover;
           background-blend-mode: overlay;
           background-repeat: no-repeat;
-     text-decoration: none;
+ 
       }
 .button3{
   color: beige;
@@ -71,7 +69,7 @@ text{
         background-size: cover;
         background-blend-mode: overlay;
         background-repeat: no-repeat;
-     text-decoration: none;
+  
     }
 
 .menu{
